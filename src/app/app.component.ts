@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgFor, NgIf } from '@angular/common';
+import { NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [NgFor, NgIf, FormsModule] // Add necessary imports
+  imports: [NgFor, FormsModule] // Remove NgIf
 })
 export class AppComponent {
   title = 'To-Do App';
