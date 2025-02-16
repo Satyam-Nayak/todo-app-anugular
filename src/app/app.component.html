@@ -6,11 +6,23 @@
     <button (click)="addTodo()">Add</button>
   </div>
 
-  <ul>
+  <ul class="todo-list">
     <li *ngFor="let todo of todos; let i = index">
       <span [class.completed]="todo.completed">{{ todo.text }}</span>
       <button (click)="toggleComplete(i)">✔</button>
       <button (click)="removeTodo(i)">✖</button>
     </li>
   </ul>
+
+  <!-- Footer inside the box -->
+  <footer>
+    <p>© 2025 by Sonu</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><img src="assets/fb.png" alt="Facebook"></a>
+      <a href="https://instagram.com" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a>
+      <a href="https://linkedin.com" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://github.com" target="_blank"><img src="assets/github.png" alt="GitHub"></a>
+      <a href="https://drive.google.com" target="_blank"><img src="assets/drive.png" alt="Google Drive"></a>
+    </div>
+  </footer>
 </div>
