@@ -6,7 +6,7 @@
     <button (click)="addTodo()">Add</button>
   </div>
 
-  <ul class="todo-list">
+  <ul>
     <li *ngFor="let todo of todos; let i = index">
       <span [class.completed]="todo.completed">{{ todo.text }}</span>
       <button (click)="toggleComplete(i)">✔</button>
@@ -14,7 +14,7 @@
     </li>
   </ul>
 
-  <!-- Footer inside the box -->
+  <!-- Footer Inside the Box -->
   <footer>
     <p>© 2025 by Sonu</p>
     <div class="social-icons">
